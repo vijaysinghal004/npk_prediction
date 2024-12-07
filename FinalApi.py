@@ -14,7 +14,7 @@ from keras.models import load_model  # For soil classification
 # Load the trained models
 model1 = joblib.load("npk_ph_predictor_model.pkl")  # NPK prediction model
 soil_classifier_model = load_model(
-    "keras_model.h5", compile=False)  # Soil classification model
+    "keras_model.h5", compile=True)  # Soil classification model
 
 # Initialize Flask app
 app = Flask(__name__)
